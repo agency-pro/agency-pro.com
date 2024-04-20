@@ -20,8 +20,8 @@
         <div class="hero-bottom-image">
           <img src="/assets/images/hero/hero.jpg" alt="Hero"/>
           <div class="hero-social">
-            <a href="#" target="_blank"><i class="fab fa-github-alt"></i> <span>Github</span></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+            <a href="https://github.com/agency-pro" target="_blank"><i class="fab fa-github-alt"></i> <span>Github</span></a>
+            <a href="https://x.com/agencypro_com" target="_blank"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
             <a href="https://www.instagram.com/agency_pro_com" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
             <a href="#" target="_blank"><i class="fab fa-dribbble"></i> <span>Dribbble</span></a>
           </div>
