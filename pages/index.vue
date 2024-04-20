@@ -353,6 +353,12 @@ import {ygencyUtilits} from "~/utilits";
   }
 })(document, "script");
 
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-WLGHW7K124');
+
 export default {
   name: "index",
   mounted() {
