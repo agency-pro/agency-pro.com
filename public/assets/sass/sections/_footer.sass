@@ -1,0 +1,336 @@
+/*******************************************************/
+/******************* ## Main Footer *******************/
+/*******************************************************/
+.main-footer
+    background-color: #F8FAFD
+    &:after
+        z-index: -1
+        +size(550px)
+        opacity: 0.2
+        border-radius: 50%
+        filter: blur(200px)
+        +poRB(-150px, -150px)
+        background: $color-primary
+        animation: zoomInOut 5s infinite
+    
+.footer-bg
+    z-index: -1
+    width: 100%
+    opacity: 0.05
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+    
+.footer-top
+    border-bottom: 1px solid $color-border
+    
+.lets-work
+    img
+        float: left
+        +size(80px)
+        border-radius: 50%
+        margin-right: 20px
+        +res-bl(sm)
+            +size(50px)
+    span
+        color: $color-secondary
+        font-size: 85px
+        font-weight: 600
+        line-height: 1.1
+        +res-bl(xl)
+            font-size: 65px
+        +res-bl(sm)
+            font-size: 50px
+        +res-bl(xs)
+            font-size: 40px
+    
+.footer-contact-info
+    .theme-btn.style-three
+        margin-top: 15px
+        +res-bl(xs)
+            font-size: 20px
+        &:not(:last-child)
+            margin-right: 30px
+        &:not(:hover)
+            background: white
+                
+.footer-right-content
+    +res-ab(xxl)
+        border-left: 1px solid $color-border
+        padding-left: 60px
+        +gapTB(padding, 75px)
+    +res-bl(xxl)
+        padding-top: 75px
+    .widget_nav_menu
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+                
+.footer-title
+    margin-bottom: 28px
+    
+.footer-bottom-menu
+    ul
+        flex-wrap: wrap
+        display: inline-flex
+        margin-right: -30px
+        li
+            margin: 0 30px 5px 0
+                
+.copyright-text
+    border-top: 1px solid $color-border
+    border-left: 1px solid $color-border
+    +res-bl(xxl)
+        border: none
+    p
+        margin-bottom: 5px
+    a
+        color: $color-secondary
+        font-weight: 500
+        
+/* Footer Two */
+.footer-widget
+    margin-bottom: 50px
+.footer-two
+    .footer-title
+        +res-ab(xs)
+            font-size: 22px
+    p
+        a
+            color: $color-primary
+    .widget_nav_menu
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .list-style-two li
+            font-size: 16px
+            &:not(:last-child)
+                margin-bottom: 5px
+.footer-left-title
+    font-size: 65px
+    font-weight: 500
+    line-height: 1.1
+    color: $color-secondary
+    +res-bl(xl)
+        font-size: 55px
+    +res-bl(sm)
+        font-size: 45px
+    +res-bl(sm)
+        font-size: 40px
+    +res-bl(xs)
+        font-size: 35px
+        
+.footer-links
+    a
+        color: $color-secondary
+        &:hover
+            color: $color-primary
+    
+.footer-text
+    max-width: 250px
+    color: $color-secondary
+    a
+        margin-bottom: 8px
+        display: inline-block
+        color: $color-secondary
+        text-decoration: underline
+        &:hover
+            color: $color-primary
+            text-decoration: none
+    
+.footer-newsletter
+    display: flex
+    font-size: 18px
+    margin-bottom: 30px
+    padding-bottom: 15px
+    border-bottom: 2px solid $color-secondary
+    input
+        padding: 0
+        border: none
+        background: transparent
+        color: $color-secondary
+        &::placeholder
+            font-weight: 500
+            color: $color-secondary
+    button
+        color: $color-primary
+        background: transparent
+        transform: rotate(-45deg)
+    
+.newsletter-widget
+    .policy
+        display: flex
+        input
+            margin-top: 3px
+            margin-right: 15px
+        label
+            margin-bottom: 0
+            a
+                text-decoration: underline
+        
+/* Footer top two */
+.footer-three
+    .copyright-area
+        a
+            color: $color-primary
+    .list-style-two li
+        font-size: 16px
+.footer-top-two
+    .footer-logo
+        max-width: 160px
+    .social-style-four
+        a
+            &:hover
+                color: $color-primary
+                text-decoration: underline
+            
+/* Footer Four */
+.footer-four
+    .social-style-four
+        +gapLR(margin, -15px)
+        a
+            +gapLR(margin, 15px)
+            &:hover
+                color: $color-primary
+    .list-style-two
+        li
+            font-size: 16px
+            &:not(:last-child)
+                margin-bottom: 10px
+    .footer-logo
+        max-width: 160px
+    .copyright-area
+        border-top: 1px solid $color-border
+        a
+            color: $color-primary
+    .pricing-bg
+        bottom: -30%
+            
+/* Footer Five */
+.footer-five
+    background: #0A1019
+    .footer-widget
+        color: rgba(255, 255, 255, 0.65)
+    .footer-bottom-menu ul li a
+        color: rgba(255, 255, 255, 0.65)
+        &:hover
+            color: $color-primary
+    .footer-copyright-text 
+        color: rgba(255, 255, 255, 0.75)
+        a
+            color: $color-primary
+    .copyright-area
+        border-top: 1px solid rgba(255, 255, 255, 0.1)
+    .footer-info
+        .list-style-two
+            li
+                display: flex
+                &:not(:last-child)
+                    margin-bottom: 15px
+                i
+                    margin-top: 7px
+                    margin-right: 13px
+                    color: $color-primary
+                a
+                    color: rgba(255, 255, 255, 0.65)
+                    &:hover
+                        color: white
+                        font-size: 24px
+    .footer-newsletter
+        border-color: rgba(255, 255, 255, 0.16)
+        input
+            color: rgba(255, 255, 255, 0.65)
+            &::placeholder
+                color: rgba(255, 255, 255, 0.65)
+    .policy label
+        color: rgba(255, 255, 255, 0.65)
+        a
+            color: rgba(255, 255, 255, 0.65)
+            &:hover
+                color: white
+            
+/* Footer Six */
+.footer-six
+    color: #64748B
+    background: #0A1019
+    a
+        color: #64748B
+    .footer-title
+        color: white
+    .footer-logo
+        img
+            max-width: 160px
+    .footer-newsletter
+        border: none
+        background: white
+        padding: 5px 5px 5px 20px
+        input
+            color: #64748B
+            &::placeholder
+                color: #64748B
+        button
+            flex: none
+            +size(45px)
+            color: black
+            font-size: 20px
+            line-height: 45px
+            text-align: center
+            transform: rotate(0deg)
+            background: $color-primary
+            i
+                transform: rotate(-45deg)
+    .list-style-two
+        li
+            display: flex
+            font-size: 16px
+            i
+                flex: none
+                width: 20px
+                font-size: 20px
+                margin-top: 10px
+                margin-right: 12px
+                color: $color-primary
+    .widget_nav_menu
+        .list-style-two
+            li
+                transition: 0.4s
+                position: relative
+                a
+                    &:before
+                        left: 0
+                        top: 2px
+                        opacity: 0
+                        color: white
+                        transition: 0.5s
+                        content: "\f105"
+                        position: absolute
+                        font-family: "Font Awesome 5 Pro"
+                    &:hover
+                        color: white
+                        padding-left: 18px
+                        &:before
+                            opacity: 1
+    .footer-info
+        .list-style-two
+            li
+                &:not(:last-child)
+                    margin-bottom: 15px
+                
+    .copyright-area
+        border-top: 1px solid rgba(255, 255, 255, 0.10)
+        .footer-copyright-text
+            a
+                color: $color-primary
+        .scroll-top
+            border-radius: 50%
+            +poLT(calc(50% - 20px), -20px)
+            +res-ab(md)
+                top: -30px
+                +size(60px)
+                font-size: 20px
+                line-height: 60px
+                left: calc(50% - 30px)
+        .social-style-two
+            a:not(:hover)
+                border-color: rgba(255, 255, 255, 0.10)

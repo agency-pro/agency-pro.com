@@ -1,0 +1,82 @@
+/*******************************************************/
+/******************** ## FAQs Area *********************/
+/*******************************************************/
+.accordion-item
+    border: none
+    padding: 20px 30px
+    background: #F8FAFD
+    &:not(:last-child)
+        margin-bottom: 15px
+    .accordion-button
+        padding: 0
+        font-size: 20px
+        box-shadow: none
+        font-weight: 500
+        background: transparent
+        color: $color-secondary
+        +res-bl(xs)
+            font-size: 18px
+        &:focus
+            box-shadow: none
+        &:after
+            font-size: 18px
+            background: none
+            content: "\f061"
+            color: $color-body
+            font-family: "Font Awesome 5 Pro"
+        &:not(.collapsed):after
+            transform: rotate(90deg)
+            color: $color-primary
+    .accordion-body
+        padding: 25px 0 0
+        p
+            font-size: 18px
+            &:last-child
+                margin-bottom: 0
+            
+.faq-shapes
+    .shape
+        z-index: -1
+        max-width: 10%
+        position: absolute
+        animation: rotated_circle 10s linear infinite
+        &.left
+            left: 5%
+            top: 25%
+        &.right
+            right: 5%
+            bottom: 35%
+            
+/* FAQ Four */
+.faq-four-iamge
+    z-index: 1
+    position: relative
+    display: inline-block
+    animation: semi_rotated 10s infinite
+    img
+        border-radius: 250px 250px 0 0
+    &:before
+        content: ''
+        z-index: -1
+        width: 135%
+        opacity: 0.15
+        +poLB(50%, -8%)
+        border-radius: 50%
+        padding-bottom: 135%
+        background: $color-primary
+        transform: translate(-50%)
+    
+.service-page-faq-area
+    &:before,
+    &:after
+        content: ''
+        z-index: -1
+        +size(100px)
+    &:before
+        +poLT(6%, 32%)
+        animation: rotated_circle linear 10s infinite
+        background: url(../images/projects/ellipse-left.png) no-repeat
+    &:after
+        +poRT(4%, 50%)
+        animation: rotated_circle_reverse linear 10s infinite
+        background: url(../images/projects/ellipse-right.png) no-repeat right
