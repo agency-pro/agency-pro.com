@@ -63,7 +63,7 @@
           <div class="menu-btns">
             <!-- menu sidbar -->
             <div class="menu-sidebar">
-              <a href="https://calendar.agency-pro.com/admin" target="_blank">
+              <a href="https://calendar.agency-pro.com/agency-pro" target="_blank">
                 <i class="fa fa-calendar-alt" alt="Agendar Reunião" />
               </a>
             </div>
